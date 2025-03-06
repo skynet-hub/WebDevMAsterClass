@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>First Webpage</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <style>
+
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        position: relative;
+        background: linear-gradient(135deg, #dbd8d8, #887171);
+      }
+      .carousel-inner {
+        height: 400px;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        top: 20px;
+      }
+
+      .grid-container {
+        width: 80%;
+        margin: 50px auto;
+        padding: 15px;
+        display: grid;
+        gap: 100px;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
+      }
+
+      .btn-primary {
+        width: 100%;
+      }
+
+      .footer {
+        width: 100%;
+        background-color: aliceblue;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+      }
+
+      .outer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./assets/pexels-andrey-grushnikov-223358-707676.jpg" style="width: 200px;" class="d-block w-100" alt="Watch image" />
+        </div>
+        <div class="carousel-item">
+          <img src="assets/pexels-matt-webster-643346449-30781087.jpg" style="width: 100%;" class="d-block w-100" alt="House like structure picture" />
+        </div>
+        <div class="carousel-item">
+          <img src="assets/pexels-samianas-5641953.jpg"  class="d-block w-100" style="width: 100%;" alt="A person with an ambrella" />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!--Doing Cards for the page, make them flexible using grid-wrap-->
+    <div class="outer">
+    <div class="grid-container">
+      <div class="card" style="width: 18rem;">
+      <img src="./assets/pexels-asphotograpy-218717.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+      <h5 class="card-title">Hitesh Choudhary</h5>
+      <p class="card-text">Hitesh course on how the web works, really fascinating stuff I recommend you go watch it.</p>
+      <a href="https://youtu.be/5rLFYtXHo9s?si=e5CuSkJrt-J0A-G2" target="_blank" class="btn btn-primary">Youtube Course</a>
+      </div>
+      </div>
+
+       <div class="card" style="width: 18rem;">
+      <img src="./assets/pexels-realtoughcandy-11035471.jpg" class="card-img-top" alt="React Js Logo">
+      <div class="card-body">
+      <h5 class="card-title">Hitesh Choudhary</h5>
+      <p class="card-text">A real good youtube course on ReactJs, if you are into front-end check it out.</p>
+      <a href="https://youtu.be/4DqAvWonPAg?si=qTxxjYZ1lJvQ6shc" class="btn btn-primary" target="_blank">React Js</a>
+      </div>
+      </div>
+
+       <div class="card" style="width: 18rem;">
+      <img src="assets/pexels-realtoughcandy-11035380.jpg" class="card-img-top" alt="NodeJs picture">
+      <div class="card-body">
+      <h5 class="card-title">Hitesh Choudhary</h5>
+      <p class="card-text">A video on how to make a clone of stackoverflow using nextJs and appwriter.</p>
+      <a href="https://youtu.be/v8qXKIPgLfM?si=6YZ8yT15PlbY_NPh" target="_blank" class="btn btn-primary">Stackoverflow clone</a>
+      </div>
+      </div>
+    </div>
+    </div>
+
+
+    <div class="footer">
+      <p>&copy;WLTcode 2025</p>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
