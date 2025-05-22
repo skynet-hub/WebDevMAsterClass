@@ -6,4 +6,4 @@ let lenovo = {
 
 Object.setPrototypeOf(lenovo, Computer)
 
-console.log(Object.getOwnPropertyNames(lenovo))
+console.log(Object.getOwnPropertyNames(Computer))

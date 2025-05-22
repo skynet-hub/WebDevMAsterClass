@@ -32,7 +32,28 @@ document.getElementById("addNewItem").addEventListener('click', function(){
 
 //Example 5
 document.getElementById('removeLastTask').addEventListener('click', function(){
-    let deleteItem = document.getElementById('taskList').lastElementChild.remove()
+    document.getElementById('taskList').lastElementChild.remove()
+})
+
+//example 6
+
+document.getElementById('clickMeButton').addEventListener('mouseover', function(){
+    alert('An event has been triggered')
 })
 
 
+//Selecting one item in the list(Delegation-events)
+
+document.getElementById('example-7').addEventListener('click', function(event){
+    if (event.target && event.target.matches('.teaItem')){
+        alert(`You have clicked ${event.target.textContent}`)
+    }
+})
+
+//Handling forms in the DOM
+
+document.getElementById('feedbackForm').addEventListener('submit', (event) => {
+    event.preventDefault();
+    let feedback = document.getElementById('feedbackInput').value;
+    document.getElementById('feedbackDisplay').innerText = feedback;
+})

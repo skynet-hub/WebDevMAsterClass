@@ -166,7 +166,7 @@ class Employee{
         if(salary < 0){
             throw new Error("Invalid Salary, salary cannot be negative")
         }
-        this.#salary = salary; //There's non special about this underscore(Doesn't have anyeaning in JS)
+        this._salary = salary; //There's non special about this underscore(Doesn't have anyeaning in JS)
     }
 
     get salary(){
@@ -205,7 +205,6 @@ class Rectangle extends Shape{
         return width * height
     }
 }
-
 
 
 let shape1 = new Rectangle()
