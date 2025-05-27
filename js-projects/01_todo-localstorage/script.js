@@ -7,11 +7,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
   let tasks = JSON.parse(localStorage.getItem('tasks')) || [];
 
+  tasks.forEach(task => renderTask(task));
+
 
   //Let us add an event listener to the button(submit)
 
   addBtn.addEventListener('click', ()=> {
-    tasks.forEach(task => renderTask(task));
     const todoItem = inputField.value.trim();
     if (todoItem === "") return;
 
@@ -26,6 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
     storeTask()
     renderTask(newTask);
     inputField.value = "";
+  })
 
     function renderTask(task){
       const li = document.createElement('li');
@@ -55,6 +57,6 @@ document.addEventListener('DOMContentLoaded', () => {
     function storeTask(){
         localStorage.setItem('tasks', JSON.stringify(tasks));
     }
-})
+
 })
 
