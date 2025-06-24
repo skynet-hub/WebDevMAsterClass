@@ -34,12 +34,12 @@ This repository contains the backend API responsible for handling all user inter
 
 vidtube-api/
 │
-├── controllers/        # Route handlers (e.g., videoController.js)/
-├── models/             # MongoDB schema models (User, Video, Comment, Tweet)/
-├── routes/             # API route definitions (e.g., videoRoutes.js)/
-├── middleware/         # Custom middleware (auth, error handling)/
-├── config/             # Configuration files (e.g., database connection)/
-├── utils/              # Utility functions (e.g., generateToken.js)
-├── .env                # Environment variables for development/production
-├── server.js           # Entry point of the application/
+├── controllers/        # Route handlers (e.g., videoController.js)\
+├── models/             # MongoDB schema models (User, Video, Comment, Tweet)\
+├── routes/             # API route definitions (e.g., videoRoutes.js)\
+├── middleware/         # Custom middleware (auth, error handling)\
+├── config/             # Configuration files (e.g., database connection)\
+├── utils/              # Utility functions (e.g., generateToken.js)\
+├── .env                # Environment variables for development production\
+├── server.js           # Entry point of the application\
 └── README.md           # Project documentation
