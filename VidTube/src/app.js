@@ -29,7 +29,7 @@ import { errorHandler } from "./middlewares/error.middlewares.js";
 
 //Use the routes to serve
 app.use("/api/v1/healthcheck", healthcheckRouter)
-app.use("api/v1/users", userRouter)
+app.use("/api/v1/users", userRouter)
 
 
 app.use(errorHandler)

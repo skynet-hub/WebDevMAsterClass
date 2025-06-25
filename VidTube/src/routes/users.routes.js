@@ -1,4 +1,4 @@
- import {Router} from "express"
+import {Router} from "express"
 import { registerUser } from "../controllers/users.controllers.js"
 import { upload } from "../middlewares/multer.middlewares.js"
 

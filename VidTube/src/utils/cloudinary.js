@@ -1,5 +1,6 @@
 import { v2 as cloudinary } from "cloudinary";
 import fs from "fs"
+import dotenv from "dotenv"
 
 //configure cloudinary
 cloudinary.config({
@@ -10,6 +11,7 @@ cloudinary.config({
 
 const uploadOnCloudinary = async (localFilePath) => {
     try {
+        console.log("I am inside the upload section")
         if (!localFilePath) return null
         const response = cloudinary.v2.uploader.upload(localFilePath, {
             resource_type: "auto"
